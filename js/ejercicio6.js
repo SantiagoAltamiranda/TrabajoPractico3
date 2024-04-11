@@ -11,31 +11,31 @@ Output: 58
 */
 
 function calcularPerimetro(ladoA, ladoB) {
-    return 2 * (ladoA + ladoB);
+  return 2 * (ladoA + ladoB);
 }
 
 function solicitarLadosRectangulo() {
-    let ladoA = prompt("Ingrese la longitud del lado A:");
-    let ladoB = prompt("Ingrese la longitud del lado B:");
+  let ladoA = prompt("Ingrese la longitud del lado A:");
+  let ladoB = prompt("Ingrese la longitud del lado B:");
 
-    if(!esNumeroValido(ladoA) || !esNumeroValido(ladoB)){
-        alert("Por favor ingrese valores numericos validos.")
-        return null;
-    }
+  if (!esNumeroValido(ladoA) || !esNumeroValido(ladoB)) {
+    alert("Por favor ingrese valores numericos validos.");
+    return null;
+  }
 
-    return[parseFloat(ladoA), parseFloat(ladoB)];
+  return [parseFloat(ladoA), parseFloat(ladoB)];
 }
 
 function esNumeroValido(valor) {
-    return !isNaN(parseFloat(valor)) && isFinite(valor);
+  return !isNaN(parseFloat(valor)) && isFinite(valor);
 }
 
 function mostrarPerimetro(perimetro) {
-    alert(`El perimetro del rectangulo es: ${perimetro}`);
+  alert(`El perimetro del rectangulo es: ${perimetro}`);
 }
 
 let lados = solicitarLadosRectangulo();
-if (lados !== null){
-    let perimetro = calcularPerimetro(lados[0], lados[1]);
-    mostrarPerimetro(perimetro);
+if (lados !== null) {
+  let perimetro = calcularPerimetro(lados[0], lados[1]);
+  mostrarPerimetro(perimetro);
 }

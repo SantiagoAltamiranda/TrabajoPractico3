@@ -21,19 +21,20 @@ Egipto’]
 let ciudades = [];
 
 while (ciudades.length < 10) {
-    let ciudad = prompt("Por favor, ingresa el nombre de una ciudad:");
-    if (ciudad === null) {
-        break;
-    }
-    ciudades.push(ciudad);
+  let ciudad = prompt("Por favor, ingresa el nombre de una ciudad:");
+  if (ciudad === null) {
+    break;
+  }
+  ciudades.push(ciudad);
 }
-
 
 document.write(`<p>El arreglo de ciudades tiene 10 elementos</p>`);
 
 document.write(`<p>Elemento 1er posicion: ${ciudades[0]}</p>`);
 document.write(`<p>Elemento 3er posicion: ${ciudades[2]}</p>`);
-document.write(`<p>Elemento ultima posicion: ${ciudades[ciudades.length - 1]}</p>`);
+document.write(
+  `<p>Elemento ultima posicion: ${ciudades[ciudades.length - 1]}</p>`
+);
 document.write(`<p>Elemento ultima posicion: París, Francia</p>`);
 
 ciudades.push("París, Francia");
@@ -44,5 +45,5 @@ ciudades[1] = "Barcelona, España";
 
 document.write("<h2>Arreglo de ciudades</h2>");
 for (let i = 0; i < ciudades.length; i++) {
-    document.write(`<p>Elemento ${i + 1}: ${ciudades[i]}</p>`);
+  document.write(`<p>Elemento ${i + 1}: ${ciudades[i]}</p>`);
 }

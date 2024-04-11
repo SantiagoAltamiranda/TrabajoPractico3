@@ -6,14 +6,14 @@ par o impar. Mostrar por pantalla el resultado devuelto por la función.
 */
 
 function parOImpar(numero) {
-    const resultado = ["par", "impar"];
-    return resultado[numero % 2];
+  const resultado = ["par", "impar"];
+  return resultado[numero % 2];
 }
 
-let numUsuario = parseInt(prompt("Ingrese un numero entero:"))
-if(!isNaN(numUsuario)) {
-    let resultado = parOImpar(numUsuario);
-    alert(`El número ${numUsuario} es ${resultado}.`);
+let numUsuario = parseInt(prompt("Ingrese un numero entero:"));
+if (!isNaN(numUsuario)) {
+  let resultado = parOImpar(numUsuario);
+  alert(`El número ${numUsuario} es ${resultado}.`);
 } else {
-    alert("El número ingresado no es un numero entero.");
+  alert("El número ingresado no es un numero entero.");
 }
